@@ -2,7 +2,10 @@ const path = require('path');
 
 module.exports = {
   entry: {
-    app: './app.js',
+    app: [
+      '!!script-loader!foundation-sites/dist/plugins/foundation.core.js',
+      './app.js',
+    ],
     app2: './app2.js'
   },
   module: {
