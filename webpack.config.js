@@ -3,6 +3,7 @@ const path = require('path');
 module.exports = {
   entry: {
     app: './app.js',
+    app2: './app2.js'
   },
   module: {
     rules: [
